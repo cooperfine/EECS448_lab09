@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <p> WELCOME TO THE S'MORE STORE </p> 
+    <link rel="stylesheet" href="style.css">
+  </head> 
+  <body>
+    <form action= "customerBackend.php" method = "post" name = "customerBackend">
+      <label for="username"> Username:</label>
+      <input type = "text" id= "uname" name = "username">
+      <br>
+      <label for="password"> Password:</label>
+      <input type= "text" id= "pword" name = "password"> 
+      <br>
+    <div class="store">
+      <img src="marshmallow.png" alt="marshmallow" style="width:100%">
+      <br>
+      <b>Price: $5.00 </b>
+      <p> Quantity (0-3): </p>
+      <select name= "quantity1" id = "quantity1">
+      <option value="0">0</option>	 
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      </select>
+      </div>
+    <div class="store">
+      <img src="Hersheys.png" alt="chocolate" style="width:100%">
+      <br>
+      <b> Price: $7.00 </b>
+      <p> Quantity (0-3): </p>
+      <select name= "quantity2" id = "quantity2">
+      <option value="0">0</option>	 
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      </select>
+      </div>
+    <div class="store">
+      <img src="graham.png" alt="cracker" style="height:30%">
+      <br>
+      <b> Price: $3.00 </b>
+      <p> Quantity (0-3): </p>
+      <select name= "quantity3" id = "quantity3">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      </select>
+    </div>
+    <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
+  
+    <div class = "del">
+    <p> Select your delivery method </p>
+    <input type="radio" id="free" name="delivery" value="0.00">
+    <label for="free">Free 7 day</label> <br>
+    <input type="radio" id="one" name="delivery" value="50.00">
+    <label for="one">$50.00 over night</label> <br>
+    <input type="radio" id="three" name="delivery" value="5.00">
+    <label for="three">$5.00 three day</label> <br>
+    <br> </div>  
+
+  <input type="button" value="Refresh Page" onClick="location.href=location.href"></input> <!- https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click->
+    <input type="submit" value="submit"></input>
+   </form>
+  </body> 
+</html>
